@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+	<ui:composition template="_template.xhtml">
+
+		<ui:define name="conteudo">
+		
+			<p:panelGrid columns="2">
+				<p:graphicImage library="img" name="logo1.png" width="60" height="80"/>
+			</p:panelGrid>
+			
+			<h3>Sample Layout</h3>
+			<div class="p-grid sample-layout">
+			    <div class="p-col-12 p-md-2">
+			        Menu
+			    </div>
+			    <div class="p-col-12 p-md-10  p-col-nogutter">
+			    <div class="p-grid">
+			        <div class="p-col-12 p-col-nogutter">
+			            Top Bar
+			        </div>
+			            <div class="p-col-12">
+			                <div class="p-grid">
+			                    <div class="p-col-12 p-md-4">blablabla2</div>
+			                    <div class="p-col-12 p-md-4">blablabla</div>
+
+			 
+			                    <div class="p-col-12 p-md-6">lalalalla.</div>
+			                    <div class="p-col-12 p-md-6">hahhahaha.</div>
+			                </div>     
+			            </div>
+			        </div>
+			    </div>
+			    <div class="p-col-12">
+			        Footer
+			    </div>
+			</div>
+			 
+			<style type="text/css">
+			    .box,
+			    .sample-layout > div {
+			        background-color: #cce4f7;
+			        text-align: center;
+			        padding-top: 1em;
+			        padding-bottom: 1em;
+			        border-radius: 4px;
+			    }
+			 
+			    .box-stretched {
+			        height: 100%;
+			    }
+			 
+			    .sample-layout {
+			        margin: 0;
+			    }
+			 
+			    .sample-layout > div {
+			        border: 1px solid #ffffff;
+			    }
+			 
+			    .vertical-container {
+			        margin: 0;
+			        height: 200px;
+			        background: #efefef;
+			        border-radius: 4px;
+			    }
+			 
+			    .nested-grid .p-col-4 {
+			        padding-bottom: 1em;
+			    }
+			</style>
+			
+		</ui:define>
+		
+	</ui:composition>
+</html>
