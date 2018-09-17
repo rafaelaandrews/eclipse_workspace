@@ -5060,3 +5060,379 @@ java.lang.IllegalArgumentException
 	at org.eclipse.jpt.jpa.core.internal.InternalJpaProjectManager$BuildJpaProjectCommand.execute(InternalJpaProjectManager.java:306)
 	at org.eclipse.jpt.common.core.internal.utility.command.JobCommandJob.run(JobCommandJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+!SESSION 2018-09-17 12:10:10.725 -----------------------------------------------
+eclipse.buildId=4.8.0.I20180611-0500
+java.version=1.8.0_181
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.core 2 0 2018-09-17 12:10:14.319
+!MESSAGE Builtin LFS support not present/detected
+!STACK 0
+java.lang.ClassNotFoundException: org.eclipse.jgit.lfs.BuiltinLFS cannot be found by org.eclipse.egit.core_5.0.0.201806131550-r
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:508)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:419)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:411)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:150)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+	at org.eclipse.egit.core.Activator.registerBuiltinLFS(Activator.java:279)
+	at org.eclipse.egit.core.Activator.start(Activator.java:212)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:779)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:772)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:729)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1002)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:354)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:581)
+	at org.eclipse.osgi.container.Module.start(Module.java:449)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:468)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:114)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:505)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:328)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:392)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:36)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:454)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:419)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:411)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:150)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.egit.ui.Activator$RepositoryChangeScanner.<init>(Activator.java:921)
+	at org.eclipse.egit.ui.Activator.setupRepoChangeScanner(Activator.java:1034)
+	at org.eclipse.egit.ui.Activator.start(Activator.java:336)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:779)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:772)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:729)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1002)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:354)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:581)
+	at org.eclipse.osgi.container.Module.start(Module.java:449)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:468)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:114)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:505)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:328)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:392)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:470)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:419)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:411)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:150)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:609)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:177)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:931)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:60)
+	at org.eclipse.ui.internal.services.WorkbenchServiceRegistry.getSourceProviders(WorkbenchServiceRegistry.java:174)
+	at org.eclipse.ui.internal.services.SourceProviderService.readRegistry(SourceProviderService.java:104)
+	at org.eclipse.ui.internal.Workbench$34.runWithException(Workbench.java:2378)
+	at org.eclipse.ui.internal.StartupThreading$StartupRunnable.run(StartupThreading.java:32)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:233)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:144)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4567)
+	at org.eclipse.ui.internal.StartupThreading.runWithoutExceptions(StartupThreading.java:95)
+	at org.eclipse.ui.internal.Workbench.initializeDefaultServices(Workbench.java:2373)
+	at org.eclipse.ui.internal.Workbench.init(Workbench.java:1654)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2859)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:654)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:597)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:656)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:592)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1498)
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-09-17 12:10:21.857
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\estnar'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-09-17 12:10:37.772
+!MESSAGE The POM for siga:interface-mumps:jar:1.0 is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-09-17 12:10:37.828
+!MESSAGE The artifact kxml2:kxml2:jar:2.1.8 has been relocated to net.sf.kxml:kxml2:jar:2.1.8
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-09-17 12:10:47.495
+!MESSAGE The artifact kxml2:kxml2:jar:2.3.0 has been relocated to net.sf.kxml:kxml2:jar:2.3.0
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-09-17 12:10:47.497
+!MESSAGE The artifact jstl:jstl:jar:1.1.2 has been relocated to javax.servlet:jstl:jar:1.1.2
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-09-17 12:10:57.773
+!MESSAGE The artifact kxml2:kxml2:jar:2.3.0 has been relocated to net.sf.kxml:kxml2:jar:2.3.0
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-09-17 12:11:01.697
+!MESSAGE The artifact kxml2:kxml2:jar:2.3.0 has been relocated to net.sf.kxml:kxml2:jar:2.3.0
+
+!ENTRY org.eclipse.jpt.jpa.core 4 0 2018-09-17 12:11:05.210
+!MESSAGE null JPA platform: P/sigarh-lotacao
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jpt.jpa.core.internal.InternalJpaProjectManager.buildJpaProject(InternalJpaProjectManager.java:644)
+	at org.eclipse.jpt.jpa.core.internal.InternalJpaProjectManager.buildJpaProject(InternalJpaProjectManager.java:636)
+	at org.eclipse.jpt.jpa.core.internal.InternalJpaProjectManager.buildJpaProject(InternalJpaProjectManager.java:629)
+	at org.eclipse.jpt.jpa.core.internal.InternalJpaProjectManager.addJpaProject(InternalJpaProjectManager.java:610)
+	at org.eclipse.jpt.jpa.core.internal.InternalJpaProjectManager.buildJpaProject_(InternalJpaProjectManager.java:313)
+	at org.eclipse.jpt.jpa.core.internal.InternalJpaProjectManager$BuildJpaProjectCommand.execute(InternalJpaProjectManager.java:306)
+	at org.eclipse.jpt.common.core.internal.utility.command.JobCommandJob.run(JobCommandJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.jpt.jpa.core 4 0 2018-09-17 12:11:05.211
+!MESSAGE null JPA platform: P/sigarh-aq
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jpt.jpa.core.internal.InternalJpaProjectManager.buildJpaProject(InternalJpaProjectManager.java:644)
+	at org.eclipse.jpt.jpa.core.internal.InternalJpaProjectManager.buildJpaProject(InternalJpaProjectManager.java:636)
+	at org.eclipse.jpt.jpa.core.internal.InternalJpaProjectManager.buildJpaProject(InternalJpaProjectManager.java:629)
+	at org.eclipse.jpt.jpa.core.internal.InternalJpaProjectManager.addJpaProject(InternalJpaProjectManager.java:610)
+	at org.eclipse.jpt.jpa.core.internal.InternalJpaProjectManager.buildJpaProject_(InternalJpaProjectManager.java:313)
+	at org.eclipse.jpt.jpa.core.internal.InternalJpaProjectManager$BuildJpaProjectCommand.execute(InternalJpaProjectManager.java:306)
+	at org.eclipse.jpt.common.core.internal.utility.command.JobCommandJob.run(JobCommandJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.jpt.jpa.core 4 0 2018-09-17 12:11:05.212
+!MESSAGE null JPA platform: P/sigarh-provimento
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jpt.jpa.core.internal.InternalJpaProjectManager.buildJpaProject(InternalJpaProjectManager.java:644)
+	at org.eclipse.jpt.jpa.core.internal.InternalJpaProjectManager.buildJpaProject(InternalJpaProjectManager.java:636)
+	at org.eclipse.jpt.jpa.core.internal.InternalJpaProjectManager.buildJpaProject(InternalJpaProjectManager.java:629)
+	at org.eclipse.jpt.jpa.core.internal.InternalJpaProjectManager.addJpaProject(InternalJpaProjectManager.java:610)
+	at org.eclipse.jpt.jpa.core.internal.InternalJpaProjectManager.buildJpaProject_(InternalJpaProjectManager.java:313)
+	at org.eclipse.jpt.jpa.core.internal.InternalJpaProjectManager$BuildJpaProjectCommand.execute(InternalJpaProjectManager.java:306)
+	at org.eclipse.jpt.common.core.internal.utility.command.JobCommandJob.run(JobCommandJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.jpt.jpa.core 4 0 2018-09-17 12:11:05.280
+!MESSAGE null JPA platform: P/sigarh-dados-cadastrais
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jpt.jpa.core.internal.InternalJpaProjectManager.buildJpaProject(InternalJpaProjectManager.java:644)
+	at org.eclipse.jpt.jpa.core.internal.InternalJpaProjectManager.buildJpaProject(InternalJpaProjectManager.java:636)
+	at org.eclipse.jpt.jpa.core.internal.InternalJpaProjectManager.buildJpaProject(InternalJpaProjectManager.java:629)
+	at org.eclipse.jpt.jpa.core.internal.InternalJpaProjectManager.addJpaProject(InternalJpaProjectManager.java:610)
+	at org.eclipse.jpt.jpa.core.internal.InternalJpaProjectManager.buildJpaProject_(InternalJpaProjectManager.java:313)
+	at org.eclipse.jpt.jpa.core.internal.InternalJpaProjectManager$BuildJpaProjectCommand.execute(InternalJpaProjectManager.java:306)
+	at org.eclipse.jpt.common.core.internal.utility.command.JobCommandJob.run(JobCommandJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-09-17 12:11:22.035
+!MESSAGE The artifact jfreechart:jfreechart:jar:1.0.0 has been relocated to jfree:jfreechart:jar:1.0.0
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-09-17 12:11:28.813
+!MESSAGE The artifact jfreechart:jfreechart:jar:1.0.0 has been relocated to jfree:jfreechart:jar:1.0.0
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-09-17 12:11:31.183
+!MESSAGE The artifact jstl:jstl:jar:1.1.2 has been relocated to javax.servlet:jstl:jar:1.1.2
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2018-09-17 12:39:44.698
+!MESSAGE Server returned lastModified <= 0 for http://download.eclipse.org/e4/snapshots/org.eclipse.e4.ui/content.jar
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1002 2018-09-17 12:39:45.199
+!MESSAGE Unable to read repository at http://download.eclipse.org/e4/snapshots/org.eclipse.e4.ui.
+!STACK 0
+java.io.IOException: http://download.eclipse.org/e4/snapshots/org.eclipse.e4.ui is not a valid repository location.
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.load(SimpleMetadataRepositoryFactory.java:100)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:60)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:767)
+	at sun.reflect.GeneratedMethodAccessor101.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:107)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:102)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.getAvailableRepositories(UpdateChecker.java:149)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.checkForUpdates(UpdateChecker.java:127)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:75)
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2018-09-17 12:39:45.574
+!MESSAGE Server returned lastModified <= 0 for http://download.eclipse.org/eclipse/updates/4.8/content.jar
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1002 2018-09-17 12:39:46.058
+!MESSAGE Unable to read repository at http://download.eclipse.org/eclipse/updates/4.8.
+!STACK 0
+java.io.IOException: http://download.eclipse.org/eclipse/updates/4.8 is not a valid repository location.
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.load(SimpleMetadataRepositoryFactory.java:100)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:60)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:767)
+	at sun.reflect.GeneratedMethodAccessor101.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:107)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:102)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.getAvailableRepositories(UpdateChecker.java:149)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.checkForUpdates(UpdateChecker.java:127)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:75)
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2018-09-17 12:39:46.887
+!MESSAGE Server returned lastModified <= 0 for http://download.eclipse.org/releases/photon/content.jar
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1002 2018-09-17 12:39:47.369
+!MESSAGE Unable to read repository at http://download.eclipse.org/releases/photon.
+!STACK 0
+java.io.IOException: http://download.eclipse.org/releases/photon is not a valid repository location.
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.load(SimpleMetadataRepositoryFactory.java:100)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:60)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:767)
+	at sun.reflect.GeneratedMethodAccessor101.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:107)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:102)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.getAvailableRepositories(UpdateChecker.java:149)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.checkForUpdates(UpdateChecker.java:127)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:75)
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2018-09-17 12:39:49.056
+!MESSAGE Server returned lastModified <= 0 for http://download.eclipse.org/usssdk/updates/content.jar
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1002 2018-09-17 12:39:49.538
+!MESSAGE Unable to read repository at http://download.eclipse.org/usssdk/updates.
+!STACK 0
+java.io.IOException: http://download.eclipse.org/usssdk/updates is not a valid repository location.
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.load(SimpleMetadataRepositoryFactory.java:100)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:60)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:767)
+	at sun.reflect.GeneratedMethodAccessor101.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:107)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:102)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.getAvailableRepositories(UpdateChecker.java:149)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.checkForUpdates(UpdateChecker.java:127)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:75)
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2018-09-17 12:39:49.912
+!MESSAGE Server returned lastModified <= 0 for http://download.eclipse.org/oomph/uss/updates/latest/content.jar
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1002 2018-09-17 12:39:50.401
+!MESSAGE Unable to read repository at http://download.eclipse.org/oomph/uss/updates/latest.
+!STACK 0
+java.io.IOException: http://download.eclipse.org/oomph/uss/updates/latest is not a valid repository location.
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.load(SimpleMetadataRepositoryFactory.java:100)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:60)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:767)
+	at sun.reflect.GeneratedMethodAccessor101.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:107)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:102)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.getAvailableRepositories(UpdateChecker.java:149)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.checkForUpdates(UpdateChecker.java:127)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:75)
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2018-09-17 12:39:50.771
+!MESSAGE Server returned lastModified <= 0 for http://download.eclipse.org/webtools/repository/photon/content.jar
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1002 2018-09-17 12:39:52.249
+!MESSAGE Unable to read repository at http://download.eclipse.org/webtools/repository/photon.
+!STACK 0
+java.io.IOException: http://download.eclipse.org/webtools/repository/photon is not a valid repository location.
+	at org.eclipse.equinox.internal.p2.metadata.repository.SimpleMetadataRepositoryFactory.load(SimpleMetadataRepositoryFactory.java:100)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.factoryLoad(MetadataRepositoryManager.java:60)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:767)
+	at sun.reflect.GeneratedMethodAccessor101.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:117)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:409)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:201)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:476)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:107)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:102)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.getAvailableRepositories(UpdateChecker.java:149)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.checkForUpdates(UpdateChecker.java:127)
+	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:75)
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2018-09-17 12:39:53.441
+!MESSAGE Server returned lastModified <= 0 for http://download.eclipse.org/e4/snapshots/org.eclipse.e4.ui/content.jar
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2018-09-17 12:39:55.329
+!MESSAGE Server returned lastModified <= 0 for http://download.eclipse.org/eclipse/updates/4.8/content.jar
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2018-09-17 12:39:57.184
+!MESSAGE Server returned lastModified <= 0 for http://download.eclipse.org/releases/photon/content.jar
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2018-09-17 12:39:58.056
+!MESSAGE Server returned lastModified <= 0 for http://download.eclipse.org/usssdk/updates/content.jar
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2018-09-17 12:39:58.910
+!MESSAGE Server returned lastModified <= 0 for http://download.eclipse.org/oomph/uss/updates/latest/content.jar
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2018-09-17 12:40:01.273
+!MESSAGE Server returned lastModified <= 0 for http://download.eclipse.org/webtools/repository/photon/content.jar
+
+!ENTRY org.eclipse.jpt.common.ui 4 0 2018-09-17 13:32:07.959
+!MESSAGE Unexpected parent: P/cadastro
+!STACK 0
+java.lang.IllegalArgumentException: Unexpected parent: P/cadastro
+	at org.eclipse.jpt.common.ui.internal.jface.ItemTreeStateProviderManager.getChildren(ItemTreeStateProviderManager.java:79)
+	at org.eclipse.jpt.common.ui.internal.navigator.NavigatorContentProvider.getChildren(NavigatorContentProvider.java:109)
+	at org.eclipse.ui.internal.navigator.extensions.SafeDelegateTreeContentProvider.getChildren(SafeDelegateTreeContentProvider.java:95)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider$1.run(NavigatorContentServiceContentProvider.java:157)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider.internalGetChildren(NavigatorContentServiceContentProvider.java:143)
+	at org.eclipse.ui.internal.navigator.NavigatorContentServiceContentProvider.getChildren(NavigatorContentServiceContentProvider.java:122)
+	at org.eclipse.jst.jee.ui.internal.navigator.JEE5ContentProvider$1.run(JEE5ContentProvider.java:142)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:37)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:182)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3906)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3537)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1170)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1059)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:667)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:597)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:656)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:592)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1498)
