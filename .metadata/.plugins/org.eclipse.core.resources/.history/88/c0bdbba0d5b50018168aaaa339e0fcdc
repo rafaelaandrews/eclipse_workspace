@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:b="http://bootsfaces.net/ui">
+
+	<h:head>
+		<link rel="shortcut icon" type="image/ico" href="http://localhost:8080/cadastro/Favicon.ico"/>
+		<title>Cadastro</title>
+	</h:head>
+		
+	<h:body>
+		<div id="cabecalho">
+
+			<p:panelGrid >
+			    <h:form rendered="#{usuarioLogado != null}">  
+    				<p:growl id="messages"/>
+ 
+    				<p:menubar>
+    					<p:menuitem value="Home" url="index.xhtml" icon="fa fa-home"/>
+				        <p:menuitem value="Alunos" url="aluno.xhtml" icon="fa fa-graduation-cap"/>
+				        <p:menuitem value="Professores" url="professor.xhtml" icon="fa fa-user"/>
+						<p:menuitem value="Cursos" url="cursos.xhtml" icon="fa fa-book"/>
+				        <p:menuitem value="Turmas" url="turma.xhtml" icon="fa fa-group"/>
+				       	<p:menuitem value="Sair" actionListener="#{loginBean.deslogar}" icon="fa fa-power-off" />
+				    </p:menubar>
+				    
+				</h:form>
+				</p:panelGrid>
+			
+			<h1>
+				<ui:insert name="titulo"></ui:insert>
+			</h1>
+		</div>
+	
+		<div id="conteudo">
+			<ui:insert name="conteudo">
+			</ui:insert>
+		</div>
+		
+		<!-- <footer>
+  			<h:panelGrid columns="2">
+				<h:graphicImage library="img" name="logo1.png" width="60" height="80"/>
+			</h:panelGrid>
+		</footer>-->
+		
+		
+		
+	</h:body>
+
+</html>

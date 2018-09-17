@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<modules>
+  <module moduleId="org.eclipse.jst.jee.server:livraria-maven" serverId="Red Hat JBoss EAP 6.1+1533224371534"/>
+  <module moduleId="org.eclipse.jst.jee.server:livraria"/>
+  <module moduleId="org.eclipse.jst.jee.server:livraria-spring"/>
+</modules>

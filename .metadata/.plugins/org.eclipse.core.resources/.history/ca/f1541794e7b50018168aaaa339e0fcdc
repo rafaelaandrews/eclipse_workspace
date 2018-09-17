@@ -1,0 +1,45 @@
+package br.com.cadastro.bean;
+
+import java.io.Serializable;
+import java.util.List;
+import javax.annotation.PostConstruct;
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.ManagedProperty;
+import javax.faces.bean.ViewScoped;
+
+import br.com.cadastro.modelo.Aluno;
+ 
+@ManagedBean
+@ViewScoped
+public class TurmaBean implements Serializable {
+
+	private static final long serialVersionUID = 1L;
+
+	private List<Aluno> alunos;
+     
+    private Aluno aluno;
+     
+    @ManagedProperty("#{alunoService}")
+    private AlunoBean service;
+     
+    @PostConstruct
+    public void init() {
+    	alunos = service.carregar(aluno);
+    }
+ 
+    public List<Aluno> getAlunos() {
+        return alunos;
+    }
+ 
+    public void setService(CarService service) {
+        this.service = service;
+    }
+ 
+    public Aluno getAluno() {
+        return aluno;
+    }
+ 
+    public void setAluno(Aluno aluno) {
+        this.aluno = aluno;
+    }
+}

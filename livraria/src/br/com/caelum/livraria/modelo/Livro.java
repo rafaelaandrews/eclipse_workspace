@@ -1,0 +1,99 @@
+package br.com.caelum.livraria.modelo;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.List;
+
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.ManyToMany;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
+
+@Entity
+public class Livro implements Serializable {
+
+	private static final long serialVersionUID = 1L;
+
+	@Id
+	@GeneratedValue
+	private Integer id;
+
+	private String titulo;
+	private String isbn;
+	private String email;
+	@Temporal(TemporalType.DATE)
+	private Calendar dataLancamento = Calendar.getInstance();
+	private String telefone;
+
+	@ManyToMany(fetch=FetchType.EAGER)
+	private List<Autor> autores = new ArrayList<Autor>();
+
+	public List<Autor> getAutores() {
+		return autores;
+	}
+
+	public void adicionaAutor(Autor autor) {
+		this.autores.add(autor);
+	}
+
+	public Livro() {
+	}
+	
+	public String getTelefone() {
+		return telefone;
+	}
+
+	public void setTelefone(String telefone) {
+		this.telefone = telefone;
+	}
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	public String getTitulo() {
+		return titulo;
+	}
+
+	public void setTitulo(String titulo) {
+		this.titulo = titulo;
+	}
+
+	public String getIsbn() {
+		return isbn;
+	}
+
+	public void setIsbn(String isbn) {
+		this.isbn = isbn;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public Calendar getDataLancamento() {
+		return dataLancamento;
+	}
+
+	public void setDataLancamento(Calendar dataLancamento) {
+		this.dataLancamento = dataLancamento;
+	}
+
+	public void removeAutor(Autor autor) {
+		this.autores.remove(autor);
+	}
+
+
+}
