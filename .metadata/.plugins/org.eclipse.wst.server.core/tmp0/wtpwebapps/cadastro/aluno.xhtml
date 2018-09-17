@@ -91,13 +91,13 @@
 					<h:outputText value="#{aluno.telefone}" />
 				</p:column>
 				
-				<p:column headerText="Alterar" style="text-align:center;">
-					<p:commandButton update=":formAluno" process="@this" value="alterar" actionListener="#{alunoBean.carregar(aluno)}" 
+				<p:column style="width:45px;text-align:center">
+					<p:commandButton update=":formAluno" process="@this" actionListener="#{alunoBean.carregar(aluno)}" 
 					icon="fa fa-fw fa-edit" />
 				</p:column>					
 				
-				<p:column headerText="Remover" style="text-align:center;">
-					<p:commandButton update="@form" process="@this" value="remover" actionListener="#{alunoBean.remover(aluno)}" icon="fa fa-fw fa-remove" />
+				<p:column style="width:40px;text-align:center">
+					<p:commandButton update="@form" process="@this" actionListener="#{alunoBean.remover(aluno)}" icon="fa fa-fw fa-remove" />
 				</p:column>	
 			</p:dataTable>
 			</h:form>			

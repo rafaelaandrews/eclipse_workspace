@@ -69,13 +69,13 @@
 					<h:outputText value="#{professor.telefone}" />
 				</p:column>
 
-				<p:column headerText="Alterar" style="text-align:center;">
-					<p:commandButton update=":formProfessor" process="@this" value="alterar" 
+				<p:column style="width:45px;text-align:center">
+					<p:commandButton update=":formProfessor" process="@this" 
 						actionListener="#{professorBean.carregar(professor)}" icon="fa fa-fw fa-edit" />
 				</p:column>					
 				
-				<p:column headerText="Remover" style="text-align:center;">
-					<p:commandButton update="@form" process="@this" value="remover" 
+				<p:column style="width:40px;text-align:center">
+					<p:commandButton update="@form" process="@this" 
 						actionListener="#{professorBean.remover(professor)}" icon="fa fa-fw fa-remove" />
 				</p:column>	
 			</p:dataTable>

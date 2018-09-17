@@ -62,7 +62,8 @@
 			<br />
 	
 			<h:form id="formTabelaCursos">
-			<p:dataTable value="#{cursoBean.cursos}" var="curso" id="tabelaCursos" paginator="true" rows="5">
+
+			<p:dataTable value="#{cursoBean.cursos}" var="curso" id="tabelaCursos" paginator="true" rows="5" >
 				<f:facet name="header">Cursos</f:facet>
 				
 				<p:column headerText="Nome" sortBy="#{curso.nome}" filterBy="#{curso.nome}" filterMatchMode="contains" style="text-align:center;">
@@ -81,14 +82,15 @@
 					<h:outputText value="#{curso.diaSemana}" />
 				</p:column>				
 				
-				<p:column headerText="Alterar" style="text-align:center;">
-					<p:commandButton update=":formCurso" process="@this" value="alterar" actionListener="#{cursoBean.carregar(curso)}" icon="fa fa-fw fa-edit" />
+				<p:column style="width:45px;text-align:center">
+					<p:commandButton update=":formCurso" process="@this"  actionListener="#{cursoBean.carregar(curso)}" icon="fa fa-fw fa-edit" />
 				</p:column>					
 				
-				<p:column headerText="Remover" style="text-align:center;">
-					<p:commandButton update="@form" process="@this" value="remover" actionListener="#{cursoBean.remover(curso)}" icon="fa fa-fw fa-remove" />
+				<p:column style="width:40px;text-align:center">
+					<p:commandButton update="@form" process="@this"  actionListener="#{cursoBean.remover(curso)}" icon="fa fa-fw fa-remove" />
 				</p:column>	
 			</p:dataTable>
+
 			</h:form>			
 		</ui:define>
 	</ui:composition>

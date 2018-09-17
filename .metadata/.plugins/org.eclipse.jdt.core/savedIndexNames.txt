@@ -220,7 +220,6 @@ INDEX VERSION 1.131+C:\Desenvolvimento\eclipse\eclipse-workspace\.metadata\.plug
 1343145383.index
 3823796357.index
 3363692690.index
-3700161847.index
 1531198360.index
 129696765.index
 497317964.index
