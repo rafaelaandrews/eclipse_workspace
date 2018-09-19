@@ -44,35 +44,28 @@
 			<br />
 			<br />
 			<h:form id="formTabelaTurmas">
-				<p:panelGrid >
+				<p:dataTable>
 				    <f:facet name="header">
-				        <p:row>
-				            <p:column colspan="5">Turmas</p:column>
-				        </p:row>
-						<p:row>
-				            <p:column >Alunos</p:column>
-				            <p:column>Professor</p:column>
-				            <p:column>Curso</p:column>
-				        </p:row>				        
+				        Turmas				        
 				    </f:facet>
-				    <p:row>
-				    	<p:column >Aluno 1</p:column>
-				    	<p:column rowspan="11" >Professor 1 </p:column>
-				    	<p:column rowspan="11" >Curso 1 </p:column>  	
-				    </p:row>
-				    <p:row>
-        				<p:column>Aluno 2</p:column>
-				    </p:row>				    
-				    <p:row>
-        				<p:column>Aluno 3</p:column>
-				    </p:row>				    
-				    <p:row>
-        				<p:column>Aluno 4</p:column>
-				    </p:row>				    
-				    <p:row>
-        				<p:column>Aluno 5</p:column>
-				    </p:row>				    
-				 </p:panelGrid>
+				    <p:columnGroup type="header">
+			            <p:row>
+			            	<ui:repeat value="#{cursoBean.cursos}" var="curso">
+			                	<p:column headerText="#{curso.nome}" />
+			                </ui:repeat>
+			            </p:row>
+			            <p:row >
+			            	<ui:repeat value="#{professorBean.professores}" var="professor">
+			            		<p:column headerText="#{professor.nome}" />
+			            	</ui:repeat>
+			            </p:row>
+			            <p:row>
+			                <ui:repeat value="#{alunoBean.alunos}" var="aluno">
+			                    <p:column headerText="#{aluno.nome}" />
+			                </ui:repeat>
+			            </p:row>
+			        </p:columnGroup>			    
+				 </p:dataTable>
 			</h:form>
 		</ui:define>
 	</ui:composition>

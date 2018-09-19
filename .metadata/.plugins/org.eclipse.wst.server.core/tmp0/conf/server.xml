@@ -126,6 +126,8 @@
 
       <Context docBase="C:\Desenvolvimento\eclipse\eclipse-workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\Desenvolvimento\eclipse\eclipse-workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\cadastro" path="/cadastro" reloadable="true" source="org.eclipse.jst.jee.server:cadastro">
     <Resource auth="Container" factory="org.jboss.weld.resources.ManagerObjectFactory" name="BeanManager" type="javax.enterprise.inject.spi.BeanManager"/>
+</Context><Context docBase="C:\Desenvolvimento\eclipse\eclipse-workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\cadastro-maven" path="/cadastro-maven" reloadable="true" source="org.eclipse.jst.jee.server:cadastro-maven">
+    <Resource auth="Container" factory="org.jboss.weld.resources.ManagerObjectFactory" name="BeanManager" type="javax.enterprise.inject.spi.BeanManager"/>
 </Context></Host>
     </Engine>
   </Service>

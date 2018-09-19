@@ -82,12 +82,12 @@
 					<h:outputText value="#{curso.diaSemana}" />
 				</p:column>				
 				
-				<p:column style="width:45px;text-align:center">
-					<p:commandButton update=":formCurso" process="@this"  actionListener="#{cursoBean.carregar(curso)}" icon="fa fa-fw fa-edit" />
+				<p:column style="width:40px;text-align:center">
+					<p:commandButton update=":formCurso" process="@this" actionListener="#{cursoBean.carregar(curso)}" icon="fa fa-fw fa-edit" />
 				</p:column>					
 				
-				<p:column style="width:40px;text-align:center">
-					<p:commandButton update="@form" process="@this"  actionListener="#{cursoBean.remover(curso)}" icon="fa fa-fw fa-remove" />
+				<p:column style="width:45px;text-align:center">
+					<p:commandButton update="@form" process="@this" actionListener="#{cursoBean.remover(curso)}" icon="fa fa-fw fa-remove" />
 				</p:column>	
 			</p:dataTable>
 
